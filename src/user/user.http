@@ -1,0 +1,24 @@
+
+### LIST USERS
+GET http://localhost:3000/user
+
+
+### ADD USER
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{
+  "name": "Wa",
+  "email": "wan.lucas.90@gmail.com"
+}
+
+### UPDATE USER
+PATCH http://localhost:3000/user/102
+Content-Type: application/json
+
+{
+  "name": "Wanio Lucas"
+}
+
+### DELETE USER
+DELETE http://localhost:3000/user/102
