@@ -2,14 +2,14 @@
 ### LIST USERS
 GET http://localhost:3000/user
 
-
 ### ADD USER
 POST http://localhost:3000/user
 Content-Type: application/json
 
 {
-  "name": "Wa",
-  "email": "wan.lucas.90@gmail.com"
+  "name": "Wan",
+  "email": "wan.lucas.90@gmail.com",
+  "password": "1234"
 }
 
 ### UPDATE USER

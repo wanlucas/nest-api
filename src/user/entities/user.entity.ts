@@ -11,6 +11,9 @@ export class User {
   @Column()
   email: string;
 
+  @Column()
+  password: string;
+
   @BeforeInsert()
   generateId() {
     this.id = Math.floor(Math.random() * 1000);
