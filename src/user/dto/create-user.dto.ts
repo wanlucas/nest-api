@@ -1,4 +1,6 @@
+import { Type } from 'class-transformer';
 import { IsEmail, IsString, Length } from 'class-validator';
+import { Role } from 'src/role/role.enum';
 
 export class CreateUserDto {
   @Length(1, 20)
@@ -10,4 +12,7 @@ export class CreateUserDto {
   @IsEmail()
   @Length(1, 40)
   email: string;
+
+  @Type(() => Number)
+  role: Role;
 }

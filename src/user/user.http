@@ -7,9 +7,10 @@ POST http://localhost:3000/user
 Content-Type: application/json
 
 {
-  "name": "Wan",
-  "email": "wan.lucas.90@gmail.com",
-  "password": "1234"
+  "name": "Wanio",
+  "email": "wanio.lucas.90@gmail.com",
+  "password": "1234",
+  "role": 0
 }
 
 ### UPDATE USER
