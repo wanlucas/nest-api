@@ -3,9 +3,9 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { UserModule } from './user/user.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { APP_GUARD, APP_PIPE } from '@nestjs/core';
+import { APP_PIPE } from '@nestjs/core';
 import { AuthModule } from './auth/auth.module';
-import { RoleGuard } from './role/role.guard';
+import { CoreModule } from './core/core.module';
 
 @Module({
   imports: [
@@ -15,8 +15,9 @@ import { RoleGuard } from './role/role.guard';
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: true,
     }),
-    UserModule,
+    CoreModule,
     AuthModule,
+    UserModule,
   ],
   controllers: [AppController],
   providers: [{ provide: APP_PIPE, useClass: ValidationPipe }, AppService],

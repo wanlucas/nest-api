@@ -1,6 +1,6 @@
 import { Type } from 'class-transformer';
 import { IsEmail, IsString, Length } from 'class-validator';
-import { Role } from 'src/role/role.enum';
+import { Role } from 'src/common/enums/role.enum';
 
 export class CreateUserDto {
   @Length(1, 20)

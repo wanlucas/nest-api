@@ -6,7 +6,7 @@ import constants from './constants';
 import { APP_GUARD } from '@nestjs/core';
 import { AuthGuard } from './auth.guard';
 import { AuthService } from './auth.service';
-import { RoleGuard } from 'src/role/role.guard';
+import { RoleGuard } from 'src/common/guards/role.guard';
 
 @Module({
   imports: [

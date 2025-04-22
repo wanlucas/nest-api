@@ -2,9 +2,9 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 
 import { CanActivate, ExecutionContext, Injectable } from '@nestjs/common';
-import { ROLES_KEY } from './role.decorator';
-import { Role } from './role.enum';
 import { Reflector } from '@nestjs/core';
+import { Role } from '../enums/role.enum';
+import { ROLES_KEY } from '../decorators/role.decorator';
 
 @Injectable()
 export class RoleGuard implements CanActivate {
